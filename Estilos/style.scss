@@ -1,0 +1,53 @@
+@import '../reutilizables/formateo';
+body{
+        background-image: url(/Imagenes/FondoImagen.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        @include displayFlex(column, center, center);
+        overflow: hidden;
+}
+
+form{
+        @include displayFlex(column, center, center);
+        background-color: rgba(255, 255, 255, 0.741);
+        // padding: 20px 100px;
+        min-height: 500px;
+        min-width: 200px;
+        padding: 30px 20px;
+        h1{
+                margin: 0 auto;
+                font-size: 3rem;
+        }
+        .helados{
+                flex: auto 1 1;
+                @include displayFlex(row, center, space-evenly);
+
+                label{
+                        font-size: 2em;
+                }
+                input{
+                        // min-width: 5rem;
+                        text-align: center;
+                        width: 40%;
+                        font-size: 2rem;
+                        background: transparent;
+                        border-bottom: 1px solid $color_boton;
+                        outline: none;
+                }
+        }
+        button{
+                font-size: 1.5rem;
+                padding: 10px 30px;
+                background-color: $color_boton;
+                color: white;
+                margin-top: 12px;
+        }
+}
+
+@media (max-width: 650px) {
+        form{
+                width: 400px;
+                height: max-content;
+        }
+}

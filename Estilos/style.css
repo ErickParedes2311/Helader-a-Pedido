@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: lighter;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 20px;
+}
+
+button {
+  border: none;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  background-image: url(/Imagenes/FondoImagen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.741);
+  min-height: 500px;
+  min-width: 200px;
+  padding: 30px 20px;
+}
+form h1 {
+  margin: 0 auto;
+  font-size: 3rem;
+}
+form .helados {
+  flex: auto 1 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+form .helados label {
+  font-size: 2em;
+}
+form .helados input {
+  text-align: center;
+  width: 40%;
+  font-size: 2rem;
+  background: transparent;
+  border-bottom: 1px solid rgb(0, 195, 255);
+  outline: none;
+}
+form button {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  background-color: rgb(0, 195, 255);
+  color: white;
+  margin-top: 12px;
+}
+
+@media (max-width: 650px) {
+  form {
+    width: 400px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}/*# sourceMappingURL=style.css.map */

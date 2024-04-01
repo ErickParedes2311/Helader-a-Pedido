@@ -1,0 +1,67 @@
+// .quicksand-<uniquifier> {
+//         font-family: "Quicksand", sans-serif;
+//         font-optical-sizing: auto;
+//         font-weight: <weight>;
+//         font-style: normal;
+//         };
+
+// Formateo de css
+*{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Quicksand", sans-serif;
+                font-optical-sizing: lighter;
+        };
+
+li {
+                list-style-type: none;
+        };
+    
+a {
+                text-decoration: none;
+        };
+svg{
+                width: 20px;
+        };
+
+button {
+                border: none;
+                padding: 1px 1px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+        };
+
+input{
+                border: none;
+                outline: none;
+        };
+img{
+                width: 100px;
+}
+    
+// modo nocturno
+        $fondo_oscuro: black;
+        $text_fondo_oscuro: white;
+// modo claro
+        $fondo_claro: white;
+        $text_fondo_claro: black;
+
+// independiente
+        $color_principal: black;
+        $color_secundario: black;
+        $color_boton: rgb(0, 195, 255);
+
+
+// abreviasiones
+@mixin displayFlex ($direccion, $align, $justify){
+        display: flex;
+        flex-direction: $direccion;
+        align-items: $align;
+        justify-content: $justify;
+};
+
+@mixin calcularRadio($padding, $radio){
+        border-radius: ($padding + $radio);
+}
