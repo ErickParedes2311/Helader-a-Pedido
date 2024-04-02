@@ -31,7 +31,6 @@ function comprar() {
         }
 
         const url = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
-        window.open(url);
-        alert('Redireccion al chat con exito');
+        window.open(url, '_blank');
 
 }
