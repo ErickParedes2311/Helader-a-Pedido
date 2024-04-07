@@ -41,56 +41,90 @@ body {
   background-size: cover;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: none;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.741);
-  min-height: 500px;
-  min-width: 200px;
-  padding: 30px 20px;
-}
-form h1 {
-  margin: 0 auto;
-  font-size: 3rem;
-}
-form .helados {
-  flex: auto 1 1;
+.contenedor {
+  min-width: 465px;
+  width: 80%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
+  padding: 10px 0px;
 }
-form .helados label {
-  font-size: 2em;
+.contenedor .carrito {
+  width: 100%;
+  flex: 1 1;
+  margin: 10px 2rem;
+  display: flex;
+  flex-direction: column;
 }
-form .helados input {
+.contenedor .carrito h1 {
   text-align: center;
-  width: 40%;
-  font-size: 2rem;
-  background: transparent;
-  border-bottom: 1px solid rgb(0, 195, 255);
-  outline: none;
+  width: 100%;
+  font-size: 1.7rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
 }
-form button {
+.contenedor .carrito .tabla {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+.contenedor .carrito .tabla .encabezado_titulo .encabezado {
+  color: #777777;
+}
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen {
+  display: flex;
+  align-items: center;
+}
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen h3 {
+  font-size: 1rem;
+}
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador {
+  text-align: center;
+}
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador .contador {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(228, 228, 228);
+  border: 1px solid rgb(191, 191, 191);
+  box-shadow: 0px 0px 2px rgb(160, 160, 160);
+  font-weight: 800;
+  font-size: 100%;
+}
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador .resultado {
+  width: 30px;
+  text-align: center;
   font-size: 1.5rem;
-  padding: 10px 30px;
-  background-color: rgb(0, 195, 255);
-  color: white;
-  margin-top: 12px;
+  background: transparent;
+  color: black;
+}
+.contenedor .total_pagar {
+  margin: 10px 2rem;
 }
 
-@media (max-width: 650px) {
-  form {
-    width: 400px;
-    height: -moz-max-content;
-    height: max-content;
+@media (max-width: 1100px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor .carrito {
+    padding: 0 20px;
+  }
+  .contenedor .carrito .tabla {
+    border-spacing: 7px;
+  }
+  .contenedor .carrito .tabla .cuerpo_detalles tr .imagen h3 {
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-left: -20px;
   }
 }/*# sourceMappingURL=style.css.map */

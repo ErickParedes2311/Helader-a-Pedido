@@ -11,29 +11,80 @@
         <title>Pedido de heldos</title>
 </head>
 <body>
-        <form action="" method="post">
-                <h1>PEDIDO</h1>
-                <section class="helados">
-                        <label for="Empastado">Empastado:</label>
-                        <input type="number" id="Empastado" name="Empastado">
-                </section>
 
-                <section class="helados">                        
-                        <label for="Cono">Cono:</label>
-                        <input type="number" id="Cono" name="Cono">
-                </section>
-
-                <section class="helados">     
-                        <label for="Vaso">Vaso:</label>
-                        <input type="number" id="Vaso" name="Vaso">
-                </section>
-
-                <section class="helados"> 
-                        <label for="Salcedo">Salcedo:</label>
-                        <input type="number" id="Salcedo" name="Salcedo">
-                </section> 
-                <button onclick=comprar()>Comprar</button>      
-        </form>
+        <div class="contenedor">
+                <div class="carrito">
+                        <h1>Carrito de Compra</h1>
+                        <table class="tabla">
+                                <thead class="encabezado_titulo">
+                                        <tr class="encabezado">
+                                                <th class="Producto"></th>
+                                                <th class="cantidad">Cantidad</th>
+                                                <th class="p_compra">Compra</th>
+                                                <th class="p_venta"> Venta</th>
+                                        </tr>
+                                </thead>
+                                <tbody class="cuerpo_detalles">
+                                        <tr class="tr_cuerpo">
+                                                <th class="imagen">
+                                                        <img src="Imagenes/empastado.png" alt="">
+                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                </th>
+                                                <th class="cont_contador">
+                                                        <button class="contador mas">+</button>
+                                                        <input type="text" class="resultado" disabled placeholder="2">
+                                                        <button class="contador menos">-</button>
+                                                </th>
+                                                <th class="p_producto_compra">$0.35</th>
+                                                <th class="p_producto_venta">$0.50</th>
+                                        </tr>
+                                        <tr class="tr_cuerpo">
+                                                <th class="imagen">
+                                                        <img src="Imagenes/empastado.png" alt="">
+                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                </th>
+                                                <th class="cont_contador">
+                                                        <button class="contador mas">+</button>
+                                                        <input type="text" class="resultado" disabled placeholder="2">
+                                                        <button class="contador menos">-</button>
+                                                </th>
+                                                <th class="p_producto_compra">$0.35</th>
+                                                <th class="p_producto_venta">$0.50</th>
+                                        </tr>
+                                        <tr class="tr_cuerpo">
+                                                <th class="imagen">
+                                                        <img src="Imagenes/empastado.png" alt="">
+                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                </th>
+                                                <th class="cont_contador">
+                                                        <button class="contador mas">+</button>
+                                                        <input type="text" class="resultado" disabled placeholder="2">
+                                                        <button class="contador menos">-</button>
+                                                </th>
+                                                <th class="p_producto_compra">$0.35</th>
+                                                <th class="p_producto_venta">$0.50</th>
+                                        </tr>
+                                        <tr class="tr_cuerpo">
+                                                <th class="imagen">
+                                                        <img src="Imagenes/empastado.png" alt="">
+                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                </th>
+                                                <th class="cont_contador">
+                                                        <button class="contador mas">+</button>
+                                                        <input type="text" class="resultado" disabled placeholder="2">
+                                                        <button class="contador menos">-</button>
+                                                </th>
+                                                <th class="p_producto_compra">$0.35</th>
+                                                <th class="p_producto_venta">$0.50</th>
+                                        </tr>
+                                        
+                                </tbody>
+                        </table>
+                </div>
+                <div class="total_pagar">
+                        <h1>Total a Pagar</h1>
+                </div>
+        </div>
 
         <script src="/Mecanica/index.js"></script>
 </body>
