@@ -1,5 +1,6 @@
 function comprar() {
-        event.preventDefault();
+        // Desactivar
+        // event.preventDefault();
         const numeroTelefono = +593968123680;
 
         const empastado = Number(document.getElementById('Empastado').value);
