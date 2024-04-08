@@ -106,14 +106,22 @@ body {
   color: black;
 }
 .contenedor .total_pagar {
+  max-width: 200px;
+  min-width: 200px;
   margin: 10px 2rem;
 }
-.contenedor .total_pagar h1 {
-  text-align: center;
-  width: 100%;
-  font-size: 1.7rem;
-  border-bottom: 1px solid black;
-  padding-bottom: 7px;
+.contenedor .total_pagar .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.contenedor .total_pagar .formulario .formulario_items label {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.contenedor .total_pagar .formulario .formulario_items .items {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1000px) {

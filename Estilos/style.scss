@@ -73,8 +73,24 @@ body{
                 }
                 .total_pagar
                 {
+                        max-width: 200px;
+                        min-width: 200px;
                        margin: 10px 2rem;  
-                       h1{text-align: center; width: 100%; font-size: 1.7rem; border-bottom: 1px solid black; padding-bottom: 7px;}               
+                         .formulario
+                        {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: end;
+                                .formulario_items
+                                {
+                                        label{font-size: 1.5rem; font-weight: 800;}
+                                        .items
+                                        {
+                                                font-size: 1.5rem;
+                                        }
+                                }
+                        }
                 }
         }
 
