@@ -31,8 +31,8 @@ let actualizarValores = (id) => {
         let compra = document.getElementById(`compra_${id}`);
         let venta = document.getElementById(`venta_${id}`);
 
-        compra.textContent = `$${Math.ceil(contador.textContent * 0.35)}`;
-        venta.textContent = `$${Math.ceil(contador.textContent * 0.50)}`;
+        compra.textContent = `$${(contador.textContent * 0.35).toFixed(2)}`;
+        venta.textContent = `$${(contador.textContent * 0.50).toFixed(2)}`;
 }
 
 function comprar() {
