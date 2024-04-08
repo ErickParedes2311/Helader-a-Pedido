@@ -31,58 +31,58 @@
                                                         <h3 class="text_titulo">Empastado:</h3>
                                                 </th>
                                                 <th class="cont_contador">
-                                                        <button class="contador mas">+</button>
-                                                        <input type="text" class="resultado" disabled placeholder="2">
-                                                        <button class="contador menos">-</button>
+                                                        <button class="contador mas" onclick="sumar('empastado')">+</button>
+                                                        <span class="resultado" id="empastado">0</span>
+                                                        <button class="contador menos" onclick="restar('empastado')">-</button>
                                                 </th>
-                                                <th class="p_producto_compra">$0.35</th>
-                                                <th class="p_producto_venta">$0.50</th>
+                                                <th class="p_producto_compra" id="compra_empastado">$0</th>
+                                                <th class="p_producto_venta" id="venta_empastado">$0</th>
                                         </tr>
                                         <tr class="tr_cuerpo">
                                                 <th class="imagen">
-                                                        <img src="Imagenes/empastado.png" alt="">
-                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                        <img src="Imagenes/salcedo.png" alt="">
+                                                        <h3 class="text_titulo">Salcedo:</h3>
                                                 </th>
                                                 <th class="cont_contador">
-                                                        <button class="contador mas">+</button>
-                                                        <input type="text" class="resultado" disabled placeholder="2">
-                                                        <button class="contador menos">-</button>
+                                                        <button class="contador mas" onclick="sumar('salcedo')">+</button>
+                                                        <span class="resultado" id="salcedo">0</span>
+                                                        <button class="contador menos" onclick="restar('salcedo')">-</button>
                                                 </th>
-                                                <th class="p_producto_compra">$0.35</th>
-                                                <th class="p_producto_venta">$0.50</th>
+                                                <th class="p_producto_compra" id="compra_salcedo">$0</th>
+                                                <th class="p_producto_venta" id="venta_salcedo">$0</th>
                                         </tr>
                                         <tr class="tr_cuerpo">
                                                 <th class="imagen">
-                                                        <img src="Imagenes/empastado.png" alt="">
-                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                        <img src="Imagenes/Vaso.png" alt="">
+                                                        <h3 class="text_titulo">Vaso:</h3>
                                                 </th>
                                                 <th class="cont_contador">
-                                                        <button class="contador mas">+</button>
-                                                        <input type="text" class="resultado" disabled placeholder="2">
-                                                        <button class="contador menos">-</button>
+                                                        <button class="contador mas" onclick="sumar('vaso')">+</button>
+                                                        <span class="resultado" id="vaso">0</span>
+                                                        <button class="contador menos" onclick="restar('vaso')">-</button>
                                                 </th>
-                                                <th class="p_producto_compra">$0.35</th>
-                                                <th class="p_producto_venta">$0.50</th>
+                                                <th class="p_producto_compra" id="compra_vaso">$0</th>
+                                                <th class="p_producto_venta" id="venta_vaso">$0</th>
                                         </tr>
                                         <tr class="tr_cuerpo">
                                                 <th class="imagen">
-                                                        <img src="Imagenes/empastado.png" alt="">
-                                                        <h3 class="text_titulo">Empastado:</h3>
+                                                        <img src="Imagenes/chocolate-cono.png" alt="">
+                                                        <h3 class="text_titulo">Cono:</h3>
                                                 </th>
                                                 <th class="cont_contador">
-                                                        <button class="contador mas">+</button>
-                                                        <input type="text" class="resultado" disabled placeholder="2">
-                                                        <button class="contador menos">-</button>
+                                                        <button class="contador mas" onclick="sumar('cono')">+</button>
+                                                        <span class="resultado" id="cono">0</span>
+                                                        <button class="contador menos" onclick="restar('cono')">-</button>
                                                 </th>
-                                                <th class="p_producto_compra">$0.35</th>
-                                                <th class="p_producto_venta">$0.50</th>
+                                                <th class="p_producto_compra" id="compra_cono">$0</th>
+                                                <th class="p_producto_venta" id="venta_cono">$0</th>
                                         </tr>
                                         
                                 </tbody>
                         </table>
                 </div>
                 <div class="total_pagar">
-                        <h1>Total a Pagar</h1>
+                        <h1 id="resultadosss">Total a Pagar</h1>
                 </div>
         </div>
 

@@ -1,19 +1,19 @@
 @import '../reutilizables/formateo';
 body{
-        background-image: url(/Imagenes/FondoImagen.jpg);
+        background-image: url(/Imagenes/fondo.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         @include displayFlex(none, center, center);
-        overflow: hidden;
 }
         .contenedor
         {
-                min-width: 465px;
+                min-width: 400px;
                 width: 80%;
-                background-color: #ffffff;
-                @include displayFlex(row, center, start);
+                background-color: #ffffffec;
+                @include displayFlex(row, center, center);
                 padding: 10px 0px;
+
                 .carrito
                 {
                         width: 100%;
@@ -43,11 +43,11 @@ body{
                                                 {
                                                         display: flex;
                                                         align-items: center;
+                                                        img{width: 80px;}
                                                         h3{font-size: 1rem;}
                                                 }
                                                 .cont_contador
                                                 {
-                                                        text-align: center;
                                                         .contador
                                                         {
                                                                 width: 30px;
@@ -59,12 +59,11 @@ body{
                                                                 font-weight: 800;
                                                                 font-size: 100%;
                                                         }
-                                                        .resultado      
+                                                        .resultado
                                                         {
-                                                                width: 30px;
-                                                                text-align: center;
+                                                                padding: 0 .1rem;
+                                                                overflow: hidden;
                                                                 font-size: 1.5rem;
-                                                                background: transparent;
                                                                 color: black;
                                                         }
                                                 }
@@ -74,28 +73,57 @@ body{
                 }
                 .total_pagar
                 {
-                       margin: 10px 2rem;         
+                       margin: 10px 2rem;  
+                       h1{text-align: center; width: 100%; font-size: 1.7rem; border-bottom: 1px solid black; padding-bottom: 7px;}               
                 }
         }
 
-        @media (max-width:1100px) {
+@media (max-width:1000px) {
                 .contenedor
                 {
                         display: flex;
                         flex-direction: column;   
+                        margin-top: 40px;
                         .carrito
                         {
-                                padding: 0 20px;  
+                                padding: 0 10px;  
                                 .tabla
                                 {
-                                        border-spacing: 7px;
-                                         .cuerpo_detalles
-                                                {
-                                                        tr
+                                        border-spacing: 5px;
+                                        .cuerpo_detalles
+                                        {
+                                                        .tr_cuerpo
                                                         {
                                                                 .imagen
                                                                 {
-                                                                        h3{font-size: 1rem; margin-right: 10px; margin-left: -20px;}
+                                                                        img{width: 50px ;}
+                                                                }
+                                                        }
+                                        }
+                                }
+                        }
+                }
+        }
+        @media (max-width: 625px) {
+                .contenedor
+                {
+                        display: flex;
+                        flex-direction: column;   
+                        // margin: 20% auto;
+                        .carrito
+                        {
+                                // padding: 0 5px;  
+                                .tabla
+                                {
+                                        border-spacing: 5px;
+                                         .cuerpo_detalles
+                                                {
+                                                        .tr_cuerpo
+                                                        {
+                                                                .imagen
+                                                                {
+                                                                        img{width: 30px ;}
+                                                                        h3{font-size: .8rem;}
                                                                 }
                                                         }
                                                 }

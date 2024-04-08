@@ -36,7 +36,7 @@ img {
 }
 
 body {
-  background-image: url(/Imagenes/FondoImagen.jpg);
+  background-image: url(/Imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -44,17 +44,16 @@ body {
   flex-direction: none;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .contenedor {
-  min-width: 465px;
+  min-width: 400px;
   width: 80%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9254901961);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 10px 0px;
 }
 .contenedor .carrito {
@@ -84,11 +83,11 @@ body {
   display: flex;
   align-items: center;
 }
+.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen img {
+  width: 80px;
+}
 .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen h3 {
   font-size: 1rem;
-}
-.contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador {
-  text-align: center;
 }
 .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador .contador {
   width: 30px;
@@ -101,30 +100,50 @@ body {
   font-size: 100%;
 }
 .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .cont_contador .resultado {
-  width: 30px;
-  text-align: center;
+  padding: 0 0.1rem;
+  overflow: hidden;
   font-size: 1.5rem;
-  background: transparent;
   color: black;
 }
 .contenedor .total_pagar {
   margin: 10px 2rem;
 }
+.contenedor .total_pagar h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.7rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
+}
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .contenedor .carrito {
+    padding: 0 10px;
+  }
+  .contenedor .carrito .tabla {
+    border-spacing: 5px;
+  }
+  .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen img {
+    width: 50px;
+  }
+}
+@media (max-width: 625px) {
   .contenedor {
     display: flex;
     flex-direction: column;
   }
-  .contenedor .carrito {
-    padding: 0 20px;
-  }
   .contenedor .carrito .tabla {
-    border-spacing: 7px;
+    border-spacing: 5px;
   }
-  .contenedor .carrito .tabla .cuerpo_detalles tr .imagen h3 {
-    font-size: 1rem;
-    margin-right: 10px;
-    margin-left: -20px;
+  .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen img {
+    width: 30px;
+  }
+  .contenedor .carrito .tabla .cuerpo_detalles .tr_cuerpo .imagen h3 {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */

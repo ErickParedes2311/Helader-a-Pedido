@@ -1,3 +1,40 @@
+let sumar = (id) => 
+{
+        let contador =  document.getElementById(id);
+                contador.textContent = parseInt(contador.textContent) + 1;
+
+                if('empastado' === id){
+                        empastado = contador.textContent;
+                }else if('salcedo' === id){
+                        salcedo = contador.textContent;
+                }
+                actualizarValores(id);
+                console.log(empastado + salcedo);
+};
+
+let restar = (id) => 
+{
+        let contador = document.getElementById(id);
+                contador.textContent = parseInt(contador.textContent) - 1;
+                if('empastado' === id){
+                        empastado = contador.textContent;
+                }else if('salcedo' === id){
+                        salcedo = contador.textContent;
+                }
+                actualizarValores(id);
+                console.log(empastado + salcedo);
+}
+
+let actualizarValores = (id) => {
+
+        let contador = document.getElementById(id);
+        let compra = document.getElementById(`compra_${id}`);
+        let venta = document.getElementById(`venta_${id}`);
+
+        compra.textContent = `$${Math.ceil(contador.textContent * 0.35)}`;
+        venta.textContent = `$${Math.ceil(contador.textContent * 0.50)}`;
+}
+
 function comprar() {
         // Desactivar
         // event.preventDefault();
