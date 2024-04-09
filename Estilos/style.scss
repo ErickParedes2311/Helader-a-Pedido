@@ -84,10 +84,24 @@ body{
                                 align-items: end;
                                 .formulario_items
                                 {
+                                        margin: 10px 0;
                                         label{font-size: 1.5rem; font-weight: 800;}
                                         .items
                                         {
                                                 font-size: 1.5rem;
+                                                margin-left: 10px;
+                                        }
+                                }
+                                input[type="submit"]
+                                {
+                                        padding: 5px 30px;
+                                        background-color: $color_boton;
+                                        margin: 20px auto;
+                                        font-size: 1.2rem;
+                                        cursor: pointer;
+                                        color: white;
+                                        &:hover{      
+                                                box-shadow: 1px 1px 5px $color_boton;
                                         }
                                 }
                         }
@@ -118,6 +132,36 @@ body{
                                         }
                                 }
                         }
+                        .total_pagar
+                        {
+                                width: 100%; 
+                                margin: 10px 0 50px 0;
+                                .formulario
+                                {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        position: relative;
+                                        .formulario_items
+                                        {
+                                                display: flex;
+                                                margin: 0 1rem;
+                                                label{font-size: 1.4rem;}
+                                                .items
+                                                {
+                                                        font-size: 1.4rem;
+                                                }
+                                        }
+                                        input[type="submit"]
+                                        {
+                                                position: absolute;
+                                                top: 16px;
+                                                margin: 20px auto;
+                                                font-size: 1.2rem;
+                                        }
+                                }
+                        }
                 }
         }
         @media (max-width: 625px) {
@@ -144,6 +188,25 @@ body{
                                                         }
                                                 }
                                 }   
+                        }
+                        .total_pagar
+                        {
+                                margin: 0 0 40px 0;
+                                .formulario
+                                {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-end;
+                                        input[type="submit"]
+                                        {
+                                                position: absolute;
+                                                top: 88px;
+                                                left: 0;
+                                                right: 0;
+                                                margin: 0 auto;
+                                        }
+                                }
                         }
                 }     
         }
